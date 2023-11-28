@@ -777,12 +777,7 @@ img {
 }
 
 /* //media запросы */
-@media (max-width: 1100px) {
-  .menu__list {
-    margin-left: -13px;
-  }
-}
-@media (max-width: 1000px) {
+@media (max-width: 1127px) {
   .hotel {
     margin-bottom: 80px;
   }
@@ -932,6 +927,9 @@ img {
   .opotinity {
     margin-top: 60px;
   }
+  .map__container iframe {
+    width: 1000px;
+  }
 }
 @media (max-width: 768px) {
   .header {
@@ -1013,6 +1011,20 @@ img {
   }
   .footer__item:nth-child(2) {
     margin-right: 35px;
+  }
+  .map__container iframe {
+    width: 768px;
+  }
+}
+@media (max-width: 640px) {
+  .number__list-item {
+    width: 100%;
+  }
+  .number__item-img {
+    width: 100%;
+  }
+  .map__container iframe {
+    width: 640px;
   }
 }
 @media (max-width: 479px) {
@@ -1184,10 +1196,16 @@ img {
   .number, .choice, .form__contacts {
     margin: 60px 0px;
   }
+  .map__container iframe {
+    width: 479px;
+  }
 }
 @media (max-width: 360px) {
   .hotel__form {
     padding-top: 20px;
+  }
+  .map__container iframe {
+    width: 360px;
   }
 }
 @media (max-width: 320px) {
@@ -1260,5 +1278,6 @@ img {
   }
   .map__container iframe {
     height: 358px;
+    width: 320px;
   }
 }
